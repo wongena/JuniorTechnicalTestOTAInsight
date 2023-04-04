@@ -1,25 +1,28 @@
-main{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto';
+:root{
+    --primary-color: #013A63;
+    --secondary-color: #EDFAFF;
 }
 
 .squareContainer{
-    width: 300px;
-    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+}
+
+.square{
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
 }
 
 .addSquareButton{
-    width: 36px;
-    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #EDFAFF;
-    border: 1px dashed #013A63;
-    border-radius: 4px;
+    background: var(--secondary-color);
+    border: 1px dashed var(--primary-color);
     cursor: pointer;
 }
 
@@ -29,7 +32,5 @@ main{
 }
 
 .addedSquare{
-    width: 36px;
-    height: 36px;
-    background: #013A63;
+    background: var(--primary-color);
 }
