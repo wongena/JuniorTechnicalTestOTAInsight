@@ -1,0 +1,35 @@
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+.squareContainer{
+    width: 300px;
+    height: 100px;
+}
+
+.addSquareButton{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDFAFF;
+    border: 1px dashed #013A63;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addSquareButton img{
+    width: 11px;
+    height: 11px;
+}
+
+.addedSquare{
+    width: 36px;
+    height: 36px;
+    background: #013A63;
+}
